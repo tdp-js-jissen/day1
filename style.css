@@ -1,0 +1,44 @@
+.light-container {
+  &[data-current-color="red"] {
+    background-color: red;
+  }
+  &[data-current-color="green"] {
+    background-color: green;
+  }
+  &[data-current-color="yellow"] {
+    background-color: yellow;
+  }
+}
+
+.light {
+  display: flex;
+  gap: 4px;
+  padding: 20px;
+  background-color: gray;
+  width: fit-content;
+  border-radius: 31px;
+
+  @media(width <= 400px) {
+    display: grid;
+  }
+}
+
+.light-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
